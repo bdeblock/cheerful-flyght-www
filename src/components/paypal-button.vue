@@ -80,7 +80,7 @@
 
 <template>
   <div id="paypal-button-container"></div>
-  <v-btn @click='createOrderExt'>Cliquer ici</v-btn>
+  <!--v-btn @click='createOrderExt'>Cliquer ici</v-btn-->
   <!--v-btn @click='onApproveExt(payId)'>Cliquer ici</v-btn-->  
 </template>
   
