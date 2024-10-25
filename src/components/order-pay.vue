@@ -61,14 +61,14 @@
           <template v-slot:actions>
             <v-spacer></v-spacer>
             <paypal-button></paypal-button>
-            <v-btn
+            <!--v-btn
                 class="text-none"
                 color="primary"
                 rounded="xl"
                 text="Payer"
                 variant="flat"
                 @click="isActive.value = false"
-              ></v-btn>
+              ></v-btn-->
 
             <v-btn
                 class="text-none"
