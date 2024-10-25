@@ -153,15 +153,14 @@
             Total : {{total}}&nbsp;€
           </v-card-title>
         </v-card>
-
-        <v-checkbox class="mb-n6 mt-2" v-model="checkbox" :rules="[v => !!v || '']" required
+        <div class="text-body-2 text-justify pl-3" style="color: grey">
+          Livraison uniquement en France - Frais de port offerts à partir de 100€ d'achat - réduction de 5% à partir de 500€ d'achat.
+        </div>
+        <v-checkbox class="mb-n6 mt-2 mt-sm-0" v-model="checkbox" :rules="[v => !!v || '']" required
         >
           <template v-slot:label>
-            <div class="text-body-2 text-justify pr-2">
+            <div class="text-body-2 text-justify">
             En cochant cette case,  je reconnais avoir pris connaissance des <a id="anchor_cgv" href="#cgv" @click="dialog_cgv = !dialog_cgv">conditions générales de ventes</a> et les accepte sans réserve
-            </div>
-            <div class="text-body-2 text-justify pl-2">
-            Livraison uniquement en France - Frais de port offerts à partir de 100€ d'achat - réduction de 5% à partir de 500€ d'achat.
             </div>
           </template>
         </v-checkbox>
