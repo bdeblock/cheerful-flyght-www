@@ -57,7 +57,6 @@
               </li>
             </ul>
             <div class="text-right mt-2">Total: {{total}}€</div>
-            <div><?php echo '<p>Hello World</p>'; ?></div>
           </v-card-text>
           <template v-slot:actions>
             <v-spacer></v-spacer>
