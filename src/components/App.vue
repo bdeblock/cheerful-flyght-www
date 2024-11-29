@@ -23,7 +23,7 @@
 
 <template>
   <v-app :theme="nomTheme">
-    <v-responsive class="align-center fill-height mx-auto"  max-width="1600">
+    <v-responsive class="align-center fill-height"  max-width="1600">
         <vue-navigation></vue-navigation>
         <v-main>
           <home></home>
