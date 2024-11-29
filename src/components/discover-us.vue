@@ -23,9 +23,9 @@
 
 <style scoped>
 .history {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( 'images/vignoble2_red2.jpg');
-    background-size: cover;
-    background-color: #000000;
-	  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url( 'src/images/couverture_red2.jpg');
+  background-size: cover;
+  background-color: #000000;
+  background-position: center;
   }
 </style>
