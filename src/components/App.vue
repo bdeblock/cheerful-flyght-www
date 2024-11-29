@@ -1,5 +1,6 @@
 <script setup>
   import VueNavigation from "./vue-navigation.vue"
+  import Home from "./home.vue"
   import FooterMain from "./footer-main.vue"
   const { ref, computed, provide } = Vue
 
