@@ -7,6 +7,11 @@ const { createVuetify } = Vuetify
 
 const vuetify = createVuetify()
 
+const router = VueRouter.createRouter({
+  history: VueRouter.createWebHashHistory(),
+  routes, // short for `routes: routes`
+})
+
 const options = {
   moduleCache: {
     vue: Vue,
@@ -39,4 +44,4 @@ const app = createApp({
       loadModule('src/components/App.vue', options)
     ),
   },
-}).use(vuetify).mount('#app');
+}).use(vuetify).use(router).mount('#app');
