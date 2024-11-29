@@ -27,12 +27,12 @@
         <vue-navigation></vue-navigation>
         <v-main>
           <home></home>
-          <router-view class="bg-surface-variant" v-slot="{ Component }">
+          <!--router-view class="bg-surface-variant" v-slot="{ Component }">
             <component
             :is="Component"
             message="message test"
             />
-          </router-view>
+          </router-view-->
         </v-main>
         <footer-main></footer-main>
         <!--div>
