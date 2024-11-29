@@ -26,7 +26,8 @@
     <v-responsive class="align-center fill-height"  max-width="1600">
         <vue-navigation></vue-navigation>
         <v-main>
-          <home></home>
+          <!--home></home-->
+          <router-view></router-view>
           <!--router-view class="bg-surface-variant" v-slot="{ Component }">
             <component
             :is="Component"
