@@ -5,12 +5,11 @@ const { createApp, onMounted } = Vue;
 const { loadModule } = window['vue3-sfc-loader'];
 const { createVuetify } = Vuetify;
 const { createMemoryHistory, createRouter } = VueRouter;
-import Home from "./components/home.vue"
 
 const vuetify = createVuetify()
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', name: Home, component: () => import('./components/home.vue') },
   //{ path: '/about', component: AboutView },
 ]
 const router = createRouter({
