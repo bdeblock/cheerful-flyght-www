@@ -12,7 +12,7 @@ const routes = []
 /*  { path: '/', component: Home },
   //{ path: '/about', component: AboutView },
 ]*/
-const router = VueRouter.createRouter({
+const router = createRouter({
   history: VueRouter.createMemoryHistory(),
   routes, // short for `routes: routes`
 })
