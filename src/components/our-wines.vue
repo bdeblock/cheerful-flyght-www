@@ -115,7 +115,7 @@
                 <v-card-subtitle class="text-center" v-html="item.raw.subtitle">
                 </v-card-subtitle>
 
-                <v-card-text class="text-justify">
+                <!--v-card-text class="text-justify">
                   <v-container class='my-2'>
                     <v-row v-for="taste in item.raw.tastes" class='justify-space-between mb-1' no-gutters>
                       <v-col class="me-auto bg-transparent" cols="6" md="auto" v-html="taste.name"></v-col>
@@ -128,7 +128,7 @@
                     </v-row>
                   </v-container>
                   <v-sheet v-text="item.raw.text1" class="bg-transparent px-4"></v-sheet>
-                </v-card-text>
+                </v-card-text-->
 
                 <v-card-actions>
                   <v-btn color="primary-lighten-2" text="Découvrir"></v-btn>
@@ -140,7 +140,7 @@
                     :model-value="isExpanded(item)"
                   ></v-btn>
                 </v-card-actions>
-                <v-divider></v-divider>
+                <!--v-divider></v-divider>
                 <v-expand-transition>
                   <div v-if="isExpanded(item)">  
                     <v-card-text class="text-justify" >
@@ -148,7 +148,7 @@
                     </v-sheet>
                   </v-card-text>
                   </div>
-                </v-expand-transition>
+                </v-expand-transition-->
               </v-card>
             </v-col>
           </v-row>
