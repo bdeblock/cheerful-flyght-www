@@ -8,10 +8,10 @@ const { createMemoryHistory, createRouter } = VueRouter;
 
 const vuetify = createVuetify()
 
-const routes = []
-/*  { path: '/', component: Home },
+const routes = [
+  { path: '/', component: Home },
   //{ path: '/about', component: AboutView },
-]*/
+]
 const router = createRouter({
   history: createMemoryHistory(),
   routes, // short for `routes: routes`
