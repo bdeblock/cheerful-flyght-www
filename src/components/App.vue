@@ -1,13 +1,10 @@
 <script setup>
   import VueNavigation from "./vue-navigation.vue"
-  import CoverImage from "./cover-image.vue"
-  import DiscoverUs from "./discover-us.vue"
-  import OurWines from "./our-wines.vue"
-  import Order from "./order.vue"
+  import Home from "./home.vue"
   import FooterMain from "./footer-main.vue"
   const { ref, computed, provide } = Vue
 
-  const nomTheme = 'light'
+  const nomTheme = 'dark'
   provide('lienFacebook', "https://facebook.com/share/cHcCKP4YVB8xDH3P/")
 
 /*  const message = 'Hello World !!'
@@ -29,10 +26,13 @@
     <v-responsive class="align-center fill-height mx-auto"  max-width="1600">
         <vue-navigation></vue-navigation>
         <v-main>
-        <cover-image></cover-image>
-        <discover-us></discover-us>
-        <our-wines></our-wines>
-        <order></order>
+          <home></home>
+          <router-view class="bg-surface-variant" v-slot="{ Component }">
+            <component
+            :is="Component"
+            message="message test"
+            />
+          </router-view>
         </v-main>
         <footer-main></footer-main>
         <!--div>
