@@ -4,11 +4,16 @@
 const { createApp, onMounted } = Vue;
 const { loadModule } = window['vue3-sfc-loader'];
 const { createVuetify } = Vuetify
+//import { createMemoryHistory, createRouter } from 'vue-router'
 
 const vuetify = createVuetify()
 
+/*const routes = [
+  { path: '/', component: Home },
+  //{ path: '/about', component: AboutView },
+]*/
 /*const router = VueRouter.createRouter({
-  history: VueRouter.createWebHashHistory(),
+  history: VueRouter.createMemoryHistory(),
   routes, // short for `routes: routes`
 })*/
 
