@@ -4,7 +4,7 @@
 const { createApp, onMounted } = Vue;
 const { loadModule } = window['vue3-sfc-loader'];
 const { createVuetify } = Vuetify
-import { createMemoryHistory, createRouter } from 'vue-router'
+const { createMemoryHistory, createRouter } = VueRouter
 
 const vuetify = createVuetify()
 
