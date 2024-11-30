@@ -6,10 +6,11 @@ const { loadModule } = window['vue3-sfc-loader'];
 const { createVuetify } = Vuetify;
 const { createMemoryHistory, createRouter } = VueRouter;
 
-const vuetify = createVuetify()
+const vuetify = createVuetify();
+const Home = () => import('./components/home.vue');
 
 const routes = [
-  { path: '/', name: 'Home', component: () => import('./components/home.vue') },
+  { path: '/', name: 'Home', component: Home },
   //{ path: '/about', component: AboutView },
 ]
 const router = createRouter({
